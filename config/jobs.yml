@@ -1,0 +1,64 @@
+queries:
+  - '("desenvolvedor backend" OR "engenheiro de software" OR "backend python" OR "node.js") ("remoto" OR "home office") (site:linkedin.com/jobs OR site:gupy.io OR site:portal.gupy.io OR site:catho.com.br/vagas)'
+  - '("python" OR "fastapi" OR "node.js" OR "javascript" OR "typescript") ("remoto" OR "home office") ("api" OR "automação" OR "integração") (site:gupy.io OR site:linkedin.com/jobs OR site:catho.com.br/vagas)'
+  - '("zoho" OR "deluge" OR "zoho creator") ("remoto" OR "home office" OR "LATAM") (site:linkedin.com/jobs OR site:gupy.io OR site:catho.com.br/vagas)'
+  - '("analista de sistemas" OR "desenvolvedor de integrações" OR "arquiteto de soluções") ("remoto" OR "home office") ("python" OR "api" OR "sql" OR "automação")'
+  - '("desenvolvedor python" OR "backend developer" OR "software engineer") ("remoto" OR "remote") ("Brasil" OR "LATAM" OR "Portugal")'
+
+positive_keywords:
+  - remoto
+  - remote
+  - home office
+  - backend
+  - back-end
+  - python
+  - fastapi
+  - node
+  - node.js
+  - javascript
+  - typescript
+  - api
+  - apis
+  - rest
+  - integração
+  - integrações
+  - automação
+  - dados
+  - sql
+  - postgresql
+  - aws
+  - gcp
+  - google cloud
+  - zoho
+  - deluge
+  - etl
+  - pleno
+  - júnior
+  - junior
+  - latam
+
+negative_keywords:
+  - presencial
+  - híbrido obrigatório
+  - hibrido obrigatório
+  - inglês fluente
+  - ingles fluente
+  - inglês avançado
+  - ingles avançado
+  - espanhol fluente
+  - senior
+  - sênior
+  - estágio
+  - estagio
+  - trainee
+  - consultoria
+  - morar em são paulo
+  - morar em sp
+  - mudança para são paulo
+  - disponibilidade para viagens
+
+min_score: 4
+high_match_score: 8
+max_results_per_query: 10
+max_alerts_per_run: 15
+search_delay_seconds: 2
