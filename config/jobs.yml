@@ -1,57 +1,23 @@
 queries:
-  - '("Wellhub" OR "Gympass") ("Backend" OR "Software Engineer" OR "AI Engineer" OR "Python" OR "LLM") ("Remote - Brazil" OR "Brazil Remote" OR "Remote Brazil")'
-  - '("CloudWalk") ("Backend Engineer" OR "Software Engineer" OR "AI" OR "Machine Learning" OR "Platform") ("Remote" OR "Brazil")'
-  - '("Pipefy") ("Software Engineer" OR "Backend" OR "AI" OR "Data" OR "Python") ("Remote" OR "Brazil" OR "Brasil")'
-  - '("Nuvemshop" OR "Tiendanube") ("Backend" OR "Software Engineer" OR "Engineering" OR "Python") ("Remote" OR "remoto" OR "remote-first" OR "Brazil" OR "Brasil")'
-  - '("Wellhub" OR "CloudWalk" OR "Pipefy" OR "Nuvemshop" OR "Tiendanube") ("Backend" OR "Software Engineer" OR "AI Engineer" OR "LLM" OR "Python") ("Remote Brazil" OR "Remote - Brazil" OR "Brazil Remote" OR "100% remoto" OR "home office")'
+  - '("VTEX" OR "CloudWalk" OR "Pismo" OR "Pipefy" OR "Wellhub") ("Backend" OR "Software Engineer" OR "Python" OR "AI Engineer" OR "Data Engineer" OR "Integration Engineer") ("Remote Brazil" OR "Brazil Remote" OR "Remote - Brazil" OR "100% remoto" OR "home office" OR "remoto")'
+
+  - '("VTEX" OR "CloudWalk" OR "Pismo" OR "Pipefy" OR "Wellhub") ("Desenvolvedor Backend" OR "Engenheiro de Software" OR "Desenvolvedor Python" OR "Engenheiro de IA" OR "Desenvolvedor de Integrações" OR "Engenheiro de Dados") ("remoto" OR "home office" OR "100% remoto" OR "Brasil")'
+
+  - '("VTEX" OR "CloudWalk" OR "Pismo" OR "Pipefy" OR "Wellhub") ("Pleno" OR "Senior" OR "Sênior" OR "Backend" OR "Software Engineer") ("CLT" OR "PJ" OR "Full-time" OR "Tempo integral" OR "a combinar") ("remoto" OR "home office" OR "Remote Brazil")'
+
+  - 'site:job-boards.greenhouse.io OR site:jobs.lever.co OR site:boards.greenhouse.io OR site:jobs.ashbyhq.com ("VTEX" OR "CloudWalk" OR "Pismo" OR "Pipefy" OR "Wellhub") ("Backend" OR "Software Engineer" OR "Python" OR "AI" OR "Data") ("Remote" OR "Brazil" OR "Brasil" OR "remoto")'
+
+  - '("VTEX" OR "CloudWalk" OR "Pismo" OR "Pipefy" OR "Wellhub") ("FastAPI" OR "PostgreSQL" OR "API" OR "APIs" OR "RAG" OR "LLM" OR "automação" OR "integrações") ("remoto" OR "home office" OR "Remote Brazil" OR "Brazil Remote")'
 
 positive_keywords:
-  - remote
-  - remoto
-  - home office
-  - 100% remoto
-  - remote brazil
-  - remote - brazil
-  - brazil remote
-  - brasil remoto
-  - qualquer lugar do brasil
-  - anywhere in brazil
-  - work from anywhere within brazil
-  - backend
-  - back-end
-  - software engineer
-  - python
-  - fastapi
-  - api
-  - apis
-  - integration
-  - integrações
-  - automation
-  - automação
-  - postgresql
-  - postgres
-  - sql
-  - data
-  - dados
-  - ai
-  - ia
-  - llm
-  - rag
-  - platform
-  - cloud
-  - aws
-  - senior
-  - sênior
-  - pleno
-  - full time
-  - full-time
-  - pj
-  - clt
-  - contrato
+  - vtex
+  - cloudwalk
+  - pismo
+  - pipefy
+  - wellhub
 
-required_any_keywords:
-  - remote
   - remoto
+  - remote
   - home office
   - 100% remoto
   - remote brazil
@@ -63,12 +29,83 @@ required_any_keywords:
   - work from anywhere within brazil
   - remote-first
 
+  - backend
+  - back-end
+  - back end
+  - software engineer
+  - engenheiro de software
+  - desenvolvedor backend
+  - desenvolvedor python
+  - python developer
+  - python
+
+  - fastapi
+  - django
+  - flask
+  - node
+  - node.js
+  - typescript
+  - api
+  - apis
+  - rest
+  - webhook
+  - webhooks
+  - integration
+  - integrations
+  - integração
+  - integrações
+
+  - postgresql
+  - postgres
+  - sql
+  - database
+  - banco de dados
+  - dados
+  - data
+  - etl
+  - pipeline
+  - pipelines
+
+  - automação
+  - automation
+  - github actions
+  - aws
+  - gcp
+  - google cloud
+  - cloud
+
+  - ia
+  - ai
+  - inteligência artificial
+  - artificial intelligence
+  - llm
+  - rag
+  - langchain
+  - llamaindex
+  - agente
+  - agentes
+  - ai engineer
+  - engenheiro de ia
+
+  - pleno
+  - sênior
+  - senior
+  - clt
+  - pj
+  - contrato
+  - full-time
+  - full time
+  - tempo integral
+  - a combinar
+
 negative_keywords:
   - presencial
   - 100% presencial
   - modelo presencial
   - trabalho presencial
   - vaga presencial
+  - atuação presencial
+
   - híbrido obrigatório
   - hibrido obrigatório
   - modelo híbrido
@@ -77,59 +114,117 @@ negative_keywords:
   - trabalho hibrido
   - vaga híbrida
   - vaga hibrida
+  - atuação híbrida
+  - atuação hibrida
+  - regime híbrido
+  - regime hibrido
   - hybrid role
   - hybrid position
   - hybrid work
+  - hybrid model
+
   - onsite
   - on-site
   - on site
-  - requires relocation
-  - relocation required
-  - mudança para são paulo
-  - morar em são paulo
-  - morar em sp
+  - office days
+  - days in office
+  - presença no escritório
+  - presenca no escritorio
+  - ida ao escritório
+  - ida ao escritorio
+  - ir ao escritório
+  - ir ao escritorio
+  - comparecer ao escritório
+  - comparecer ao escritorio
   - 2x por semana
   - 3x por semana
   - duas vezes por semana
   - três vezes por semana
+  - duas vezes na semana
+  - três vezes na semana
+  - sao paulo hybrid
+  - são paulo híbrido
+  - morar em são paulo
+  - morar em sp
+  - mudança para são paulo
+  - relocation required
+  - requires relocation
+
+  - inglês avançado verbal
+  - ingles avancado verbal
+  - inglês fluente verbal
+  - ingles fluente verbal
+  - inglês conversação
+  - ingles conversacao
+  - comunicação verbal em inglês
+  - comunicacao verbal em ingles
+  - advanced spoken english
+  - fluent spoken english
+  - spoken english
+  - verbal english
+  - strong verbal english
+  - english verbal communication
+  - advanced/fluent english
+  - fluent english required
+
   - estágio
   - estagio
   - trainee
   - júnior
   - junior
+  - jovem aprendiz
+  - estágio em tecnologia
+  - internship
+
   - suporte técnico
+  - suporte tecnico
   - help desk
   - service desk
+  - technical support
+  - customer support
+  - customer success
+  - account executive
+  - sales
+  - pre-sales
+  - presales
+  - business development
+  - sdr
+  - bdr
+  - marketing
+  - recruiter
+  - talent acquisition
+  - product manager
+  - product owner
+  - designer
+  - ux designer
+  - ui designer
+
   - freelancer
   - freela
   - projeto pontual
+  - temporary contract
+  - short-term contract
+
+  - consultoria
+  - consulting
+  - outsourcing
+  - alocação
+  - alocacao
+  - alocado
+  - alocada
+  - body shop
+  - bodyshop
+
   - bairesdev
   - turing
   - toptal
   - arc.dev
   - andela
   - upwork
-  - consultoria
-  - consulting
-  - outsourcing
-  - alocação
-  - alocacao
-  - advanced english
-  - fluent english
-  - english fluency
-  - verbal english
-  - spoken english
-  - english speaker
-  - inglês avançado
-  - inglês fluente
-  - inglês verbal
-  - inglês conversação
-  - comunicação em inglês
-  - speak english
-  - speaking english
+  - freelancer.com
 
 min_score: 4
-high_match_score: 8
-max_results_per_query: 10
+high_match_score: 9
+max_results_per_query: 8
 max_alerts_per_run: 15
 search_delay_seconds: 2
