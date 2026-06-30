@@ -30,22 +30,30 @@ def calculate_score(title: str, snippet: str, link: str, config: dict) -> tuple[
     text = normalize_text(f"{title} {snippet} {link}")
 
     matched_negative = []
-
     for keyword in config.get("negative_keywords", []):
         normalized_keyword = normalize_text(keyword)
-
         if normalized_keyword and normalized_keyword in text:
             matched_negative.append(keyword)
 
     if matched_negative:
         return -999, [], matched_negative
 
+    required_keywords = config.get("required_any_keywords", [])
+    if required_keywords:
+        matched_required = []
+        for keyword in required_keywords:
+            normalized_keyword = normalize_text(keyword)
+            if normalized_keyword and normalized_keyword in text:
+                matched_required.append(keyword)
+
+        if not matched_required:
+            return -999, [], ["missing_required_remote_keyword"]
+
     score = 0
     matched_positive = []
 
     for keyword in config.get("positive_keywords", []):
         normalized_keyword = normalize_text(keyword)
-
         if normalized_keyword and normalized_keyword in text:
             score += 1
             matched_positive.append(keyword)
