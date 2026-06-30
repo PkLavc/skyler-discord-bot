@@ -2,7 +2,7 @@ name: Skyler Jobs Radar
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 12,21 * * *"
   workflow_dispatch:
 
 permissions:
