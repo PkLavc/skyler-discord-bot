@@ -82,7 +82,7 @@ negative_keywords:
   - andela
   - upwork
 
-min_score: 5
+min_score: 4
 high_match_score: 8
 max_results_per_query: 10
 max_alerts_per_run: 15
