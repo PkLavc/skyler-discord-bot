@@ -1,69 +1,97 @@
 queries:
-  - '("backend python" OR "desenvolvedor backend python" OR "python backend developer") ("remoto" OR "home office" OR "100% remoto") ("CLT" OR "PJ" OR "contrato") (site:linkedin.com/jobs OR site:gupy.io OR site:portal.gupy.io OR site:catho.com.br/vagas)'
-  - '("engenheiro de software backend" OR "back end developer" OR "backend developer") ("python" OR "fastapi" OR "postgresql") ("remoto" OR "home office") (site:linkedin.com/jobs OR site:gupy.io OR site:catho.com.br/vagas)'
-  - '("AI Engineer" OR "engenheiro de IA" OR "desenvolvedor IA" OR "LLM Engineer") ("python" OR "rag" OR "llm" OR "langchain") ("remoto" OR "home office") (site:linkedin.com/jobs OR site:gupy.io OR site:catho.com.br/vagas)'
-  - '("desenvolvedor de integrações" OR "integration engineer" OR "api integration engineer") ("python" OR "api" OR "apis" OR "webhook" OR "postgresql") ("remoto" OR "home office") (site:linkedin.com/jobs OR site:gupy.io OR site:catho.com.br/vagas)'
-  - '("Clicksign" OR "Afya" OR "CI&T" OR "Compass UOL" OR "Zup" OR "GFT" OR "iFood" OR "Stefanini") ("backend" OR "python" OR "IA" OR "AI Engineer") ("remoto" OR "home office")'
+  - '("Wellhub" OR "Gympass") ("Backend" OR "Software Engineer" OR "AI Engineer" OR "Python" OR "LLM") ("Remote - Brazil" OR "Brazil Remote" OR "Remote Brazil")'
+  - '("CloudWalk") ("Backend Engineer" OR "Software Engineer" OR "AI" OR "Machine Learning" OR "Platform") ("Remote" OR "Brazil")'
+  - '("Pipefy") ("Software Engineer" OR "Backend" OR "AI" OR "Data" OR "Python") ("Remote" OR "Brazil" OR "Brasil")'
+  - '("Nuvemshop" OR "Tiendanube") ("Backend" OR "Software Engineer" OR "Engineering" OR "Python") ("Remote" OR "remoto" OR "remote-first" OR "Brazil" OR "Brasil")'
+  - '("Wellhub" OR "CloudWalk" OR "Pipefy" OR "Nuvemshop" OR "Tiendanube") ("Backend" OR "Software Engineer" OR "AI Engineer" OR "LLM" OR "Python") ("Remote Brazil" OR "Remote - Brazil" OR "Brazil Remote" OR "100% remoto" OR "home office")'
 
 positive_keywords:
-  - remoto
   - remote
+  - remoto
   - home office
   - 100% remoto
+  - remote brazil
+  - remote - brazil
+  - brazil remote
+  - brasil remoto
+  - qualquer lugar do brasil
+  - anywhere in brazil
+  - work from anywhere within brazil
   - backend
   - back-end
-  - back end
+  - software engineer
   - python
   - fastapi
-  - django
-  - flask
+  - api
+  - apis
+  - integration
+  - integrações
+  - automation
+  - automação
   - postgresql
   - postgres
   - sql
-  - api
-  - apis
-  - rest
-  - webhook
-  - webhooks
-  - integração
-  - integrações
-  - integration
-  - automação
-  - automation
+  - data
   - dados
-  - etl
-  - pipeline
-  - pipelines
-  - aws
-  - gcp
-  - google cloud
-  - ia
   - ai
+  - ia
   - llm
   - rag
-  - langchain
-  - llamaindex
-  - agente
-  - agentes
-  - pleno
-  - sênior
+  - platform
+  - cloud
+  - aws
   - senior
-  - clt
-  - pj
-  - contrato
+  - sênior
+  - pleno
+  - full time
   - full-time
-  - tempo integral
+  - pj
+  - clt
+  - contrato
+
+required_any_keywords:
+  - remote
+  - remoto
+  - home office
+  - 100% remoto
+  - remote brazil
+  - remote - brazil
+  - brazil remote
+  - brasil remoto
+  - qualquer lugar do brasil
+  - anywhere in brazil
+  - work from anywhere within brazil
+  - remote-first
 
 negative_keywords:
   - presencial
   - 100% presencial
+  - modelo presencial
+  - trabalho presencial
+  - vaga presencial
   - híbrido obrigatório
   - hibrido obrigatório
   - modelo híbrido
   - modelo hibrido
+  - trabalho híbrido
+  - trabalho hibrido
+  - vaga híbrida
+  - vaga hibrida
+  - hybrid role
+  - hybrid position
+  - hybrid work
+  - onsite
+  - on-site
+  - on site
+  - requires relocation
+  - relocation required
+  - mudança para são paulo
   - morar em são paulo
   - morar em sp
-  - mudança para são paulo
+  - 2x por semana
+  - 3x por semana
+  - duas vezes por semana
+  - três vezes por semana
   - estágio
   - estagio
   - trainee
@@ -81,6 +109,11 @@ negative_keywords:
   - arc.dev
   - andela
   - upwork
+  - consultoria
+  - consulting
+  - outsourcing
+  - alocação
+  - alocacao
 
 min_score: 4
 high_match_score: 8
