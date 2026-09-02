@@ -61,7 +61,7 @@ def search_serpapi(query: str, max_results: int, api_key: str) -> list[dict]:
 
 def main() -> None:
     serpapi_key = os.environ["SERPAPI_KEY"]
-    discord_webhook_jobs = os.environ["DISCORD_WEBHOOK_SKYLER_JOBS"]
+    discord_webhook_jobs = os.environ["DISCORD_WEBHOOK_SKYLET_JOBS"]
 
     config = load_config()
     seen_urls = load_seen(SEEN_PATH)
@@ -137,7 +137,7 @@ def main() -> None:
 
     save_seen(SEEN_PATH, seen_urls)
 
-    summary = f"✅ Skyler Jobs Radar finalizou. {len(alerts)} nova(s) vaga(s) enviada(s)."
+    summary = f"✅ Skylet Jobs Radar finalizou. {len(alerts)} nova(s) vaga(s) enviada(s)."
 
     try:
         send_discord_message(

@@ -58,7 +58,7 @@ def send_job_alert(
             },
         ],
         "footer": {
-            "text": "Skyler Jobs Radar"
+            "text": "Skylet Jobs Radar"
         },
     }
 
